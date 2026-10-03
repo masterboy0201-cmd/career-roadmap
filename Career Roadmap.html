@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Career Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f4f2;--fg:#111;--mu:#555;--ln:#111;--dot:17,17,17;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-t=dark]{--bg:#0e0e0e;--fg:#f4f4f2;--mu:#aaa;--ln:#f4f4f2;--dot:244,244,242}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif}
+#g{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+h1,h2,h3,h4{font-family:Anton,Oswald,Impact,sans-serif;font-weight:400;line-height:.95;margin:0}
+h1,h2{text-align:center;font-size:clamp(40px,9vw,88px)}h2{font-size:clamp(32px,6vw,56px);margin-bottom:32px}
+h3{font-size:clamp(26px,4vw,36px);margin-bottom:20px}h4{font-size:20px;margin:20px 0 6px;letter-spacing:.02em}
+p{color:var(--mu)}a{color:inherit}.mono,small,.num{font-family:'JetBrains Mono',monospace}.mono,small{font-size:12px}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--bg);border-bottom:1px solid var(--ln)}
+.br{font-weight:600;text-decoration:none;margin-right:auto}.m{display:flex;align-items:center;gap:28px;flex:1}.nl{display:flex;gap:24px;margin:auto;font-size:14px}.nl a{text-decoration:none}.nr{display:flex;align-items:center;gap:14px}
+#mb{display:none}
+.l{background:none;border:0;color:inherit;font:inherit;font-size:14px;cursor:pointer;padding:0}
+.b{display:inline-block;border:1px solid var(--ln);border-radius:99px;padding:.65em 1.3em;font:500 14px Inter,sans-serif;cursor:pointer;background:var(--bg);color:var(--fg);text-decoration:none}
+.b.p{background:var(--fg);color:var(--bg)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;text-align:center;padding:120px 20px 40px;position:relative;overflow:hidden;gap:20px}
+.hero p{max-width:560px;margin:0}.hero.sm{min-height:0}.hero.home{padding-top:14vh}
+.sh{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);width:min(640px,95vw);color:var(--fg);z-index:-1}.kh{fill:var(--bg)}
+.strip{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 28px;padding:28px 20px;border-block:1px solid var(--ln);background:var(--bg);color:#888;font-weight:600}.strip small{font-weight:400}
+.w{max-width:960px;margin:0 auto;padding:56px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{border:1px solid var(--ln);padding:20px;background:var(--bg);color:var(--fg);text-align:left;font:inherit;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.card ul{margin:0;padding-left:18px;flex:1;color:var(--mu);font-size:14px}.card .pr{width:100%}.num{font:64px/1 Anton,sans-serif}
+button.tk{cursor:pointer}.tk p{font-size:13px;margin:0;color:inherit}.tk.on{background:var(--fg);color:var(--bg)}
+.tl{list-style:none;max-width:640px;margin:0 auto;padding:0 0 0 24px;border-left:1px solid var(--ln)}.tl li{position:relative;margin-bottom:32px}
+.tl li:before{content:'';position:absolute;left:-30px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--fg)}.tl b,.tl span{display:block}.tl span{color:var(--mu)}
+.s{border-top:1px solid var(--ln);padding:36px 0}.c{display:flex;gap:10px;padding:5px 0;cursor:pointer}.c input{accent-color:var(--fg);margin-top:5px;flex:none}
+.pw{width:100%;max-width:420px}.pr{margin:12px 0}.pb{height:4px;background:rgba(128,128,128,.35)}.pb i{display:block;height:100%;width:0;background:var(--fg)}
+details{border:1px solid var(--ln);padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{border:1px solid var(--ln);border-radius:99px;padding:3px 12px;font-size:13px}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid var(--ln);padding:8px 4px;text-align:left}
+textarea{width:100%;min-height:140px;background:transparent;color:inherit;border:1px solid var(--ln);padding:12px;font:inherit}
+.lg{border-top:1px solid var(--ln);padding:24px 20px;text-align:center;font-size:13px;color:var(--mu)}
+#cf{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.5);z-index:9}#cf[hidden]{display:none}
+#cf div{background:var(--bg);border:1px solid var(--ln);padding:24px;max-width:340px}
+@media(max-width:820px){#mb{display:block}.m{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:16px 20px;border-bottom:1px solid var(--ln)}.nl{flex-direction:column;margin:0}nav.open .m{display:flex}}
+@media print{body{background:#fff!important}#g,nav,.sh,#cf,.np{display:none!important}*{color:#000!important;background:#fff!important;border-color:#000!important}.pb i{background:#000!important}.hero{min-height:0;padding-top:20px}}
+</style></head><body>
+<canvas id="g"></canvas>
+<nav id="nv"><a class="br" href="#/">Career Roadmap®</a>
+<div class="m"><div class="nl"><a href="#/y1">Year 1</a><a href="#/y2">Year 2</a><a href="#/y3">Year 3</a><a href="#/y4">Year 4</a><a href="#/progress">Progress</a></div>
+<div class="nr"><button class="l" id="rs">Reset</button><a class="b p" href="#/y1">Start Year 1 ↗</a></div></div>
+<button class="l" id="th" aria-label="Toggle dark mode">◐</button><button class="l" id="mb" aria-label="Menu">☰</button></nav>
+<main id="app"></main>
+<div id="cf" hidden><div><p>Reset all progress, notes and track choice? This cannot be undone.</p><button class="b" id="no">Cancel</button> <button class="b p" id="yes">Reset</button></div></div>
+<script>
+/* ROADMAP: edit content here only. Checkbox IDs are generated from position: y1-s{group}-{n}, y1-p{phase}-t{n}, y1-pr{n}, y1-e{n}. Append new items at the end of a list to keep saved IDs stable. */
+const ROADMAP={years:[
+{theme:"Fundamentals, Linux, Communication",goal:"Build the technical base (networking, Linux, security concepts), learn to document work, and set up a lab and public profiles.",hrs:"12 (Linux 3, Networking 3, Security basics 2, Communication 2, Lab write-ups 2)",
+out:["Subnet by hand; explain a URL load end to end","OverTheWire Bandit through level 25; 10 write-ups","Home lab with 3+ VMs and a network diagram"],
+skills:{"Computer fundamentals":["Number systems, ASCII/Unicode; CPU, RAM, storage; boot process","OS: processes, threads, scheduling, virtual memory, file systems","Virtualization: VM vs container; Windows basics (Event Viewer, registry, PowerShell)"],
+"Networking":["OSI and TCP/IP, encapsulation; Ethernet, ARP, switches vs routers","IPv4, CIDR, subnetting by hand, NAT, DHCP; IPv6 basics","DNS resolution and record types; TCP handshake vs UDP; ICMP","HTTP methods, status codes, cookies; TLS handshake (high level)","Common ports (22, 53, 80, 443, 445, 3389); firewalls, proxies, VPNs","Wireshark capture and filters; Nmap basics"],
+"Linux":["Filesystem hierarchy; core commands; pipes and redirection; grep, sed, awk","Permissions (chmod, SUID, umask); users, groups, sudo","Processes, systemd, cron; logs (journalctl, auth.log); apt","Bash scripting; SSH key auth, scp, port forwarding"],
+"Security basics":["CIA triad, AAA, threat vs vulnerability vs risk, least privilege","Attack types at concept level: phishing, malware, DoS, MitM, SQLi, XSS","Symmetric vs asymmetric crypto, hashing, salting, signatures, PKI","MFA; awareness of MITRE ATT&CK, OWASP, CVE, CVSS"],
+"Communication and setup":["Lab write-up format: objective, environment, steps, evidence, findings, remediation","Markdown and a note system; explain one concept aloud for 2 minutes weekly","GitHub profile with a lab-writeups repository; complete LinkedIn profile","Home lab (Kali, Ubuntu Server, Windows evaluation VM, isolated network, snapshots)","Password manager and 2FA on all accounts"]},
+phases:[{m:"1-3",f:"Setup, fundamentals, Linux basics",tasks:["Create GitHub and LinkedIn profiles","Build Ubuntu and Kali VMs with snapshots","Complete Linux Journey; OverTheWire Bandit levels 0-10","TryHackMe Pre Security path","Write 3 lab write-ups"],d:"2 snapshotted VMs and 3 write-ups on GitHub."},
+{m:"4-6",f:"Networking",tasks:["Study OSI/TCP-IP, ARP, DHCP, DNS, TCP/UDP","Solve 50 subnetting problems by hand (suggested)","Packet Tracer lab: 2 subnets joined by a router","Annotate Wireshark captures of DNS, HTTP and a TCP handshake","Bandit levels 11-20"],d:"'Journey of a packet' write-up with annotated capture."},
+{m:"7-9",f:"Linux depth, scripting, crypto basics",tasks:["Permissions, users, groups and SUID labs","5 bash scripts: backup, failed-login counter, ping sweep, user audit, disk report","SSH key auth between two VMs","Hash files, encrypt with GPG, use openssl","Bandit levels 21-25 and beyond"],d:"Repository with 5 bash scripts, each with README and usage example."},
+{m:"10-12",f:"Security basics, Windows, communication",tasks:["TryHackMe Cyber Security 101 (path names change; verify on the platform)","Run Nmap against your own lab only","Deliver one 10-minute technical talk","Reach 10 total write-ups; draft resume v1","Write a Year 1 retrospective"],d:"10 write-ups and the retrospective."}],
+tools:["VirtualBox or VMware","Ubuntu","Kali Linux","Wireshark","Nmap","Cisco Packet Tracer","VS Code","Git","GPG","openssl"],
+res:["Linux Journey","OverTheWire Bandit","TryHackMe","The Linux Command Line (Shotts)","Professor Messer","CS50","NPTEL networking and OS courses","Cisco Networking Academy"],
+projects:["Documented home lab with network diagram","10 lab write-ups","Bash toolkit repository","Packet journey write-up","Personal knowledge base"],
+certs:"None required. Optional: CompTIA A+ or Network+, Cisco CCST Cybersecurity, Google Cybersecurity Certificate, TryHackMe Pre Security. Verify current objectives on the official site.",
+split:[["Linux",3],["Networking",3],["Security basics",2],["Communication",2],["Lab write-ups",2]],
+exit:["Subnet any IPv4 network by hand in under 2 minutes","Explain URL-to-page (DNS, TCP, TLS, HTTP) without notes","Bandit completed through level 25","10 lab write-ups on GitHub","Repository with 5 bash scripts","TryHackMe Pre Security completed","Home lab with 3+ VMs and a network diagram","GitHub and LinkedIn profiles complete","One 10-minute technical talk delivered"],
+qa:[["TCP vs UDP?","TCP: connection-oriented, reliable, ordered (web, SSH). UDP: connectionless, no delivery guarantee, low overhead (DNS, streaming)."],["What does chmod 4755 do?","Sets SUID plus rwxr-xr-x. The file runs with its owner's privileges."],["Usable hosts in a /26?","62 (64 addresses minus network and broadcast)."],["What is stored in /etc/shadow?","Password hashes and password aging data, readable only by root."],["Symmetric vs asymmetric encryption?","Symmetric: one shared key, fast. Asymmetric: public/private key pair, used for key exchange and signatures."]],
+bad:["Watching tutorials without doing labs","Skipping subnetting","Copy-pasting commands without understanding them","Not writing notes or write-ups","Collecting certificates instead of building skills","Scanning systems without permission"]},
+{theme:"Programming and DSA",goal:"Write working code in Python and C, solve 150+ DSA problems, and start web security and CTFs.",hrs:"13 (DSA 4, Python 3, C 2, Web security and CTFs 3, SQL/JS/Git 1)",
+out:["150+ DSA problems across the target distribution","3 security tools and 1 C project on GitHub","20+ PortSwigger labs, 30+ picoCTF challenges"],
+skills:{"Python":["Data structures, OOP, file I/O, exceptions, venv","requests, socket, subprocess, argparse, re, hashlib, scapy basics","Automation: log parsing, port scanner (own lab only); pytest, README"],
+"C":["Pointers, structs, malloc/free, file I/O; gcc, make, gdb","Stack frame and return address; why strcpy is unsafe","Read simple disassembly with objdump"],
+"SQL, JavaScript, Git":["SELECT, JOIN, GROUP BY, indexes, normalization; parameterized queries","DOM, fetch, cookies, same-origin policy, CORS","Git branching and pull requests; never commit secrets"],
+"DSA (suggested 150+)":["Big-O; arrays, strings, hashing: 50 problems","Linked lists, stacks, queues, recursion: 34 problems","Binary search, sorting, trees, heaps: 38 problems","Graphs, union-find, DP basics: 30 problems","6 timed contests; 30-minute cap per problem before hints"],
+"Web security and CTFs":["HTTP in depth, sessions, JWT concepts; latest OWASP Top 10 (check current edition)","Burp Suite Community; Juice Shop and DVWA run locally","PortSwigger Apprentice labs; vulnerability report format","picoCTF categories; CTFtime events; write up every solve"]},
+phases:[{m:"1-3",f:"Python and Git",tasks:["Python fundamentals through OOP; Git workflow","DSA: Big-O, arrays, strings, hashing (30 problems)","Tool 1: file integrity checker (SHA-256 baseline and compare)","Password strength checker and log parser"],d:"Tool 1 on GitHub with README and tests."},
+{m:"4-6",f:"C, SQL, systems thinking",tasks:["C: pointers, memory, structs, gdb; string utilities and a small file tool","SQL on SQLite and MySQL or PostgreSQL","DSA: lists, stacks, queues, recursion, binary search (45 problems)","Tool 2: multithreaded TCP port scanner, tested on your own lab"],d:"C repository and Tool 2."},
+{m:"7-9",f:"Web security",tasks:["JavaScript, DOM, same-origin policy","Read the OWASP Top 10; set up Burp, Juice Shop, DVWA locally","At least 20 PortSwigger Apprentice labs","DSA: trees, heaps, sorting (45 problems)","Tool 3: HTTP security header analyzer or log anomaly detector"],d:"One professional web vulnerability report plus Tool 3."},
+{m:"10-12",f:"Graphs, DP, CTFs",tasks:["DSA: graphs and DP; reach 150+ total","picoCTF: at least 30 challenges","Play at least 2 live beginner-friendly CTFs from CTFtime","Timed contests; polish all repositories"],d:"10 CTF write-ups and polished repositories."}],
+tools:["Python 3","VS Code","gcc","gdb","make","Git/GitHub","Burp Suite Community","Wireshark","Nmap","SQLite","Docker","pytest"],
+res:["Automate the Boring Stuff with Python","CS50x and CS50P","Beej's Guide to C","NeetCode 150","Striver's A2Z DSA sheet","LeetCode","SQLBolt","PortSwigger Web Security Academy","OWASP Juice Shop","DVWA","picoCTF","CTFtime"],
+projects:["Tool 1: file integrity checker","Tool 2: multithreaded port scanner","Tool 3: header analyzer or log anomaly detector","C utility project","Web vulnerability report"],
+certs:"None required. Optional: Python Institute PCEP/PCAP, TryHackMe Jr Penetration Tester path. Security+ study can start at year end. Verify objectives on the official site.",
+split:[["DSA",4],["Python",3],["C",2],["Web security and CTFs",3],["SQL/JavaScript/Git",1]],
+exit:["150+ DSA problems matching the distribution","3 security tools, each with README, usage example and tests","1 C project on GitHub","20+ PortSwigger Apprentice labs","1 professional web vulnerability report","30+ picoCTF challenges, 10 written up","At least 2 live CTFs played","At least 6 timed contests attempted"],
+qa:[["Complexity of binary search and hash map lookup?","O(log n); O(1) on average."],["Why do parameterized queries stop SQL injection?","Input is sent as data, separate from the SQL text, so it is never parsed as code."],["Stored vs reflected vs DOM XSS?","Stored: payload saved server-side. Reflected: echoed from the request. DOM: injected by client-side JavaScript."],["How does a stack overflow hijack control flow?","Overlong input overwrites the saved return address; on return, execution jumps to the attacker-chosen address."]],
+bad:["Reading solutions before attempting problems","Skipping C because Python is easier","Tools without README or tests","Solving only easy problems","Scanning third-party systems","Ignoring semester exams when planning"]},
+{theme:"Projects and Internship",goal:"Build 3+ documented projects, complete an internship, add cloud and Windows/AD skills, and choose a specialization.",hrs:"16 (Projects 6, platform practice 4, cloud 2, DSA 2, applications 1, cert study 1). Internship hours replace project hours.",
+out:["3 documented projects with reports","Internship of 4+ weeks, or a documented fallback","Specialization chosen and written down"],
+skills:{"Windows and Active Directory":["Domains, DCs, GPO, Kerberos, NTLM; build a small AD lab","Kerberoasting, pass-the-hash: lab only","Event IDs 4624, 4625, 4688, 4672, 7045; Sysmon; PowerShell logging"],
+"Offensive":["Recon, enumeration, OWASP WSTG methodology","Burp, Metasploit basics, LinPEAS/WinPEAS, GTFOBins","hashcat and John on your own hashes","Reports: executive summary, CVSS rating, reproduction, remediation"],
+"Defensive and SOC":["SIEM (Wazuh, Elastic, Splunk), Sigma rules, ATT&CK mapping","Alert triage; NIST SP 800-61 lifecycle (check current revision)","Suricata, Zeek, VirusTotal, AbuseIPDB"],
+"DFIR and malware":["Disk imaging, chain of custody, order of volatility (RFC 3227)","Autopsy, Volatility 3, Plaso timelines","Static and dynamic malware analysis in an isolated VM only"],
+"Cloud and career":["Shared responsibility, IAM, security groups, CloudTrail; set billing alerts first","flaws.cloud, CloudGoat, Prowler or ScoutSuite","Bug bounty basics: scope, responsible disclosure (practice, not income)","Resume v2, internship tracker, DSA maintenance to 200 total"]},
+phases:[{m:"1-3",f:"Explore tracks, start applying",tasks:["About 3 weeks per track: pentest, SOC, DFIR, cloud, AppSec","Build internship tracker; resume v2","Apply: suggested 5 applications and 5 outreach messages per week; confirm internship timing with your college","Start AD lab; join a CTF team"],d:"Tracker with 50+ applications and a written track comparison."},
+{m:"4-6",f:"Projects 1 and 2",tasks:["Build and document Projects 1 and 2","Reach 100+ logged applications","Play at least 3 CTFs as a team","Start certification study"],d:"2 documented projects on GitHub."},
+{m:"7-9",f:"Internship period",tasks:["Complete the internship; keep a weekly log; get a completion document","Fallbacks: remote or part-time work, professor-led research, open source, in-scope bug bounty, job simulations","Build Project 3 alongside"],d:"Internship log (or documented fallback) and Project 3 in progress."},
+{m:"10-12",f:"Consolidate, choose a specialization",tasks:["Finish Project 3; portfolio site v1","Resume v3 with internship and projects","Take a certification exam","Write the Year 4 specialization decision (track plus 3 lines of reasoning)","Start interview prep 3 months before campus placement season"],d:"3+ finished projects, resume v3, specialization decision."}],
+tools:["Wazuh","Elastic Stack","Splunk","Sigma","Suricata","Zeek","Autopsy","Volatility 3","Ghidra","Sysmon","hashcat","Metasploit","Burp Suite","BloodHound","Prowler"],
+res:["Hack The Box","TryHackMe","Blue Team Labs Online","CyberDefenders","LetsDefend","PortSwigger Academy","MITRE ATT&CK","OWASP WSTG","NIST CFReDS","Digital Corpora","Boss of the SOC datasets","Practical Malware Analysis","Internshala","Unstop"],
+projects:["Project 1 (offensive): web app pentest with full report","Project 2 (defensive or forensic): home SOC lab, forensic case, or malware lab","Project 3: cloud review, Python tool with CI, or another option","Each project: README, diagram, setup steps, findings, lessons learned"],
+certs:"Consider one or two; verify objectives on the vendor site: Security+, eJPT, PNPT, BTL1, AWS Cloud Practitioner or AZ-900/SC-900, BSCP.",
+split:[["Projects",6],["Platform practice",4],["Cloud",2],["DSA maintenance",2],["Applications and networking",1],["Certification study",1]],
+exit:["3 documented projects (README, diagram, report)","Internship of 4+ weeks with completion document, or documented fallback","15 HTB Easy machines or 30 TryHackMe rooms beyond Year 2","6 CTFs played with a team","100+ applications logged","Resume v3 reviewed by 2 people","200+ DSA problems total","Specialization chosen and written down"],
+qa:[["How does Kerberos work at a high level?","The client authenticates to the KDC and gets a TGT, then uses it to request service tickets. Services validate tickets without seeing the password."],["What do event IDs 4624 and 4625 mean?","4624: successful logon. 4625: failed logon."],["What is chain of custody?","A documented record of who handled evidence and when. It supports integrity and admissibility."],["IDS vs IPS?","IDS detects and alerts. IPS sits inline and can block."]],
+bad:["Copying write-ups instead of solving","Projects without documentation","Waiting to feel ready before applying","Running malware outside an isolated VM","Testing out-of-scope assets","No cloud billing alert","Not tracking applications or following up"]},
+{theme:"Job-Ready and Interview",goal:"Specialize, finish a capstone, finalize resume and portfolio, and complete interview preparation and applications.",hrs:"17 (Capstone 5, interview prep 5, specialization labs and cert 4, applications 2, mock interviews 1). Placement season often starts in the first half of Year 4; confirm with your training and placement cell.",
+out:["Capstone with report and demo video","10+ mock interviews, 250+ DSA problems","ATS resume, portfolio, 10 applications per week"],
+tracks:[{n:"Penetration Tester",s:"WSTG web testing, network and AD attacks, privilege escalation, scoping, reporting.",c:"PNPT, eCPPT, OSCP, PenTest+, BSCP, CEH (check current job postings)",r:"Junior Penetration Tester, VAPT Analyst",k:"Full pentest of a multi-host lab (web plus AD) with CVSS-rated findings and retest notes."},
+{n:"SOC Analyst",s:"SIEM (Splunk, Elastic, Wazuh), triage, phishing analysis, Sigma, ATT&CK mapping, IR playbooks.",c:"Security+, BTL1, CySA+, Splunk Core Certified User",r:"SOC Analyst L1/L2, Security Analyst",k:"Detection lab simulating 5 ATT&CK techniques, with detections, dashboards, incident report and playbook."},
+{n:"DFIR",s:"Windows and Linux artifacts, memory forensics, timelines, imaging, evidence handling. Legal context: Bharatiya Sakshya Adhiniyam 2023 and IT Act 2000 (verify sections).",c:"BTL1, GCFE/GCFA, CHFI",r:"DFIR Analyst, Forensic Analyst, Incident Responder",k:"Investigate a simulated incident across disk, memory, network and logs; timeline, chain of custody, court-style report."},
+{n:"Application Security",s:"Secure coding, SAST/DAST (Semgrep, ZAP, Trivy), STRIDE, OWASP API Top 10, CI/CD security.",c:"BSCP plus cloud fundamentals",r:"Application Security Associate, AppSec Engineer",k:"Threat-model an app, find and fix 10 vulnerabilities, add CI security checks, write the report."},
+{n:"Cloud Security",s:"IAM, logging, posture management, IaC scanning (Checkov), containers and Kubernetes basics, CIS Benchmarks.",c:"AWS Cloud Practitioner then Security Specialty, AZ-900/SC-200/AZ-500, CCSK (verify prerequisites)",r:"Cloud Security Analyst, Junior Cloud Security Engineer",k:"Terraform reference architecture with logging, alerts, misconfiguration scanning and remediation report."}],
+skills:{"Core interview preparation":["OS, DBMS, computer networks, OOP revision","Security fundamentals; ATT&CK, NIST CSF, Cyber Kill Chain, OWASP, CIS","Scenario drills: detect, scope, contain, eradicate, recover, report","DSA revision to 250+ total; aptitude for online assessments","STAR method; 90-second introduction; 5-minute walkthrough of every project"],
+"Resume, portfolio, profiles":["ATS resume: 1 page, single column, selectable-text PDF, keywords from target job descriptions","Portfolio site (e.g. GitHub Pages) with 3+ case studies","GitHub: 6 pinned repositories with READMEs; no secrets in history","LinkedIn: headline, about, featured projects"],
+"Job search":["Campus placements through the training and placement cell","Off-campus: LinkedIn, Naukri, Indeed, Wellfound, Unstop, referrals","Verify every offer independently; a legitimate employer does not charge money for a job","Research salary ranges from multiple current sources"]},
+phases:[{m:"1-3",f:"Placement-season execution",tasks:["Finalize resume; register with the training and placement cell","Aptitude, DSA and core-subject sprints","4 mock interviews","Start applying: campus drives plus suggested 10 applications and 5 outreach messages per week","Confirm specialization track; plan capstone"],d:"Finalized resume and portfolio site live."},
+{m:"4-6",f:"Capstone build, specialization depth",tasks:["Build the core of the capstone","Track-specific labs and certification study","Revise OS, DBMS, networks, OOP","3 more mock interviews"],d:"Capstone core working and documented."},
+{m:"7-9",f:"Capstone finalization, scenario drills",tasks:["Finish capstone: report, architecture diagram, 5-minute demo video","Take or schedule the track certification exam","Scenario drills; reach 10+ mock interviews","Add case studies to the portfolio"],d:"Finished capstone with report and video."},
+{m:"10-12",f:"Offers and transition",tasks:["Compare and verify offers; negotiate using multiple salary sources","Complete documentation and background checks","Fallback if no offer: IT support, NOC, security operations support, contract work, continued applications","Write a 6-month learning plan for the first job"],d:"Decision log and 6-month plan."}],
+tools:["Track-specific tools","Resume builder with plain-text export","GitHub Pages","Tracker spreadsheet","Screen recorder"],
+res:["MITRE ATT&CK","NIST CSF","OWASP Top 10 and ASVS","CIS Benchmarks","GeeksforGeeks interview sections","LeetCode","NeetCode","Pramp"],
+projects:["Capstone for the chosen track, with report and 5-minute demo video","Portfolio site with 3+ case studies","20 written scenario answers","Mock interview feedback log"],
+certs:"One track-aligned certification, passed or scheduled. Verify objectives on the vendor site.",
+split:[["Capstone",5],["Interview prep",5],["Specialization labs and certification",4],["Applications and networking",2],["Mock interviews",1]],
+exit:["Resume finalized (1 page, ATS-friendly), reviewed by 2 people","Portfolio live with 3+ case studies","Capstone complete with report and demo video","10+ mock interviews (3 technical, 3 core CS/DSA, 2 HR, 2 scenario) with feedback log","250+ DSA problems total","20 written scenario answers","Track certification passed or scheduled","10 applications per week sustained and logged","GitHub and LinkedIn consistent with the resume"],
+qa:[["500 failed logins, then a success: what do you do?","Confirm source IP and account, review post-login activity, contain (disable account, block IP), reset credentials, scope other accounts, document and report."],["Hash vs encryption vs encoding?","Hash: one-way, fixed output. Encryption: reversible with a key. Encoding: reversible by anyone, no secrecy."],["Authentication vs authorization?","Authentication verifies identity. Authorization decides what that identity may do."],["Phases of incident response?","Preparation, detection and analysis, containment, eradication, recovery, post-incident activity."]],
+bad:["Applying only through campus placements","Resume skills with no project evidence","Unable to explain your own projects in depth","Neglecting DSA and aptitude","Choosing a specialization too late","Accepting offers without verification, or paying for a job","Relying on a single salary figure"]}
+]};
+
+const Y=ROADMAP.years,$=s=>document.querySelector(s),app=$('#app');
+let S={c:{},n:{},sp:null,t:null};
+try{Object.assign(S,JSON.parse(localStorage.getItem('cr1')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('cr1',JSON.stringify(S))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const A=Y.map((y,i)=>{const n=i+1;return{sk:Object.values(y.skills).flatMap((a,g)=>a.map((_,k)=>`y${n}-s${g+1}-${k+1}`)),ph:y.phases.map((p,j)=>p.tasks.map((_,k)=>`y${n}-p${j+1}-t${k+1}`)),pr:y.projects.map((_,k)=>`y${n}-pr${k+1}`),ex:y.exit.map((_,k)=>`y${n}-e${k+1}`)}});
+const flat=a=>[...a.sk,...a.ph.flat(),...a.pr,...a.ex];
+const L=k=>{if(k=='all')return A.flatMap(flat);const[p,s]=k.split('-'),a=A[p[1]-1];return !s?flat(a):/^p\d$/.test(s)?a.ph[s[1]-1]:s=='ph'?a.ph.flat():a[s]};
+const pct=k=>{const l=L(k);return l.length?Math.round(100*l.filter(i=>S.c[i]).length/l.length):0};
+const bar=(k,l)=>`<div class="pr" data-k="${k}"><div class="pb"><i></i></div><small>${l||''} <b></b></small></div>`;
+const upd=()=>document.querySelectorAll('[data-k]').forEach(e=>{const p=pct(e.dataset.k);e.querySelector('i').style.width=p+'%';e.querySelector('b').textContent=p+'%'});
+const cb=(id,t)=>`<label class="c"><input type="checkbox" data-id="${id}" ${S.c[id]?'checked':''}><span>${t}</span></label>`;
+const sec=(t,h)=>`<section class="s"><h3>${t}</h3>${h}</section>`;
+const chips=a=>`<div class="chips">${a.map(x=>`<span>${x}</span>`).join('')}</div>`;
+const shield=`<svg class="sh" viewBox="0 0 600 420" aria-hidden="true"><defs><pattern id="d1" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="3.2" fill="currentColor"/></pattern><pattern id="d2" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.4" fill="currentColor"/></pattern></defs><path d="M300 10L560 90V230C560 340 430 400 300 450C170 400 40 340 40 230V90Z" fill="url(#d1)"/><path d="M300 50L520 112V228C520 316 410 366 300 408C190 366 80 316 80 228V112Z" fill="url(#d2)" stroke="currentColor" stroke-width="2"/><circle class="kh" cx="300" cy="200" r="44"/><path class="kh" d="M280 230H320L336 330H264Z"/></svg>`;
+
+const home=()=>`<header class="hero home"><h1>Four Years.<br>One Path To Job-Ready.</h1><p>A year-by-year roadmap for cybersecurity students: fundamentals, programming, projects, interviews.</p><a class="b p" href="#/y1">Start Year 1 ↗</a>${shield}</header>
+<div class="strip"><small>Practice on</small>${['TryHackMe','Hack The Box','OverTheWire','picoCTF','LeetCode','GitHub'].map(x=>`<span>${x}</span>`).join('')}</div>
+<section class="w"><div class="grid">${Y.map((y,i)=>`<div class="card"><div class="num">0${i+1}</div><h3>${y.theme}</h3><ul>${y.out.map(o=>`<li>${o}</li>`).join('')}</ul>${bar('y'+(i+1))}<a class="b" href="#/y${i+1}">View Year ↗</a></div>`).join('')}</div></section>
+<section class="w"><h2>Timeline</h2><ol class="tl">${Y.map((y,i)=>`<li><b>Year ${i+1}: ${y.theme}</b><span>${y.goal}</span></li>`).join('')}</ol></section>`;
+
+function year(i){const y=Y[i],n=i+1,tot=y.split.reduce((a,b)=>a+b[1],0);
+return `<header class="hero sm"><h1>Year ${n}: ${y.theme}</h1><p>${y.goal}</p><p class="mono">Suggested weekly hours: ${y.hrs}</p><div class="pw">${bar('y'+n,'Year progress')}</div><p class="mono">Hours and counts are suggested planning defaults. Months count from the start of the academic year. Reduce hours in exam weeks.</p></header><div class="w">`
++(y.tracks?sec('Specialization track (choose one)',`<div class="grid">${y.tracks.map(t=>`<button class="card tk${S.sp==t.n?' on':''}" data-sp="${t.n}"><h4>${t.n}</h4><p>${t.s}</p><p><b>Certifications:</b> ${t.c}</p><p><b>Roles:</b> ${t.r}</p><p><b>Capstone:</b> ${t.k}</p></button>`).join('')}</div>`):'')
++sec('1. Skills in detail',Object.entries(y.skills).map(([g,l],gi)=>`<h4>${g}</h4>`+l.map((t,k)=>cb(`y${n}-s${gi+1}-${k+1}`,t)).join('')).join('')+bar(`y${n}-sk`,'Skills'))
++sec('2. Phase plan',y.phases.map((p,j)=>`<details${j?'':' open'}><summary>Phase ${j+1} (Months ${p.m}): ${p.f}</summary>${p.tasks.map((t,k)=>cb(`y${n}-p${j+1}-t${k+1}`,t)).join('')}<p><b>Deliverable:</b> ${p.d}</p>${bar(`y${n}-p${j+1}`,'Phase progress')}</details>`).join(''))
++sec('3. Tools and platforms',chips(y.tools))
++sec('4. Free resources (names only; verify on the official site)',chips(y.res))
++sec('5. Projects and deliverables',y.projects.map((t,k)=>cb(`y${n}-pr${k+1}`,t)).join(''))
++sec('6. Certifications',`<p>${y.certs}</p>`)
++sec('7. Weekly time split (suggested)',`<table>${y.split.map(([k,h])=>`<tr><td>${k}</td><td>${h} h</td></tr>`).join('')}<tr><th>Total</th><th>${tot} h</th></tr></table>`)
++sec('8. Done when',y.exit.map((t,k)=>cb(`y${n}-e${k+1}`,t)).join(''))
++sec('9. Self-check questions (answer without notes first)',y.qa.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join(''))
++sec('10. Common mistakes to avoid',`<ul>${y.bad.map(b=>`<li>${b}</li>`).join('')}</ul>`)
++sec('11. Notes',`<textarea data-n="y${n}" aria-label="Notes">${esc(S.n['y'+n]||'')}</textarea>`)
++`</div><footer class="lg">Test only systems you own or have written permission to test. Unauthorized access is an offense under the Information Technology Act, 2000 (see Sections 43 and 66).</footer>`}
+
+const prog=()=>`<header class="hero sm"><h1>Progress</h1><div class="pw">${bar('all','Overall')}</div></header><div class="w">`
++Y.map((y,i)=>{const n=i+1;return sec(`Year ${n}: ${y.theme}`,bar('y'+n,'Year')+[['sk','By section: skills'],['ph','By section: phase tasks'],['pr','By section: projects'],['ex','By section: exit criteria']].map(([s,l])=>bar(`y${n}-${s}`,l)).join('')+y.phases.map((p,j)=>bar(`y${n}-p${j+1}`,`Phase ${j+1}: ${p.f}`)).join(''))}).join('')
++sec('Export / import',`<p>Export fills the box with JSON to copy and keep. To import, paste JSON and press Import.</p><textarea id="io" aria-label="Progress JSON"></textarea><p><button class="b" id="ex">Export</button> <button class="b" id="im">Import</button> <small id="ms"></small></p>`)+`</div>`;
+
+function route(){const h=location.hash.slice(2),m=/^y([1-4])$/.exec(h);app.innerHTML=m?year(m[1]-1):h=='progress'?prog():home();scrollTo(0,0);upd();$('#nv').classList.remove('open')}
+addEventListener('hashchange',route);
+addEventListener('beforeprint',()=>document.querySelectorAll('details').forEach(d=>d.open=true));
+document.addEventListener('change',e=>{const t=e.target,id=t.dataset.id;if(id){t.checked?S.c[id]=1:delete S.c[id];save();upd()}});
+document.addEventListener('input',e=>{const t=e.target;if(t.dataset.n){S.n[t.dataset.n]=t.value;save()}});
+document.addEventListener('click',e=>{const t=e.target,sp=t.closest('[data-sp]');
+ if(sp){S.sp=sp.dataset.sp;save();document.querySelectorAll('[data-sp]').forEach(c=>c.classList.toggle('on',c.dataset.sp==S.sp))}
+ if(t.id=='ex'){const o=$('#io');o.value=JSON.stringify({c:S.c,n:S.n,sp:S.sp},null,1);o.select();try{navigator.clipboard.writeText(o.value)}catch(x){}$('#ms').textContent='Exported'}
+ if(t.id=='im'){try{const o=JSON.parse($('#io').value);if(!o||typeof o.c!='object')throw 0;S.c=o.c;S.n=o.n||{};S.sp=o.sp||null;save();route();$('#ms').textContent='Imported'}catch(x){$('#ms').textContent='Invalid JSON'}}
+ if(t.id=='rs')$('#cf').hidden=false;if(t.id=='no')$('#cf').hidden=true;
+ if(t.id=='yes'){S={c:{},n:{},sp:null,t:S.t};save();$('#cf').hidden=true;route()}
+ if(t.id=='mb')$('#nv').classList.toggle('open');
+ if(t.id=='th'){S.t=document.documentElement.dataset.t=='dark'?'light':'dark';save();theme()}});
+
+function tex(){const c=$('#g'),x=c.getContext('2d'),w=c.width=innerWidth,h=c.height=innerHeight,s=8;x.clearRect(0,0,w,h);
+ x.fillStyle='rgb('+getComputedStyle(document.documentElement).getPropertyValue('--dot')+')';
+ for(let i=0;i<=w/s;i++)for(let j=0;j<=h/s;j++){const d=Math.min(1,Math.hypot((i*s-w/2)/(w/2),(j*s-h/2)/(h/2))/1.2),n=Math.sin(i*12.9898+j*78.233)*43758.5453;
+  const r=Math.pow(Math.max(0,d-.5)/.5,1.6)*s*.55*(.6+.4*(n-Math.floor(n)));
+  if(r>.5){x.beginPath();x.arc(i*s+(j%2)*s/2,j*s,r,0,7);x.fill()}}}
+function theme(){document.documentElement.dataset.t=S.t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');tex()}
+addEventListener('resize',tex);theme();route();
+</script></body></html>
